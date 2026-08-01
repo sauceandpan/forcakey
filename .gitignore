@@ -1,0 +1,4 @@
+# Ignore local Vercel and node artifacts
+node_modules/
+.vercel/
+.DS_Store
