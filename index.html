@@ -2,9 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#c9635c" />
     <title>Valentine Letter</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,33 +16,45 @@
       href="https://fonts.googleapis.com/css2?family=Aldrich&family=Pixelify+Sans:wght@400..700&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
   </head>
   <body>
     <!-- Envelope Screen -->
     <div id="envelope-container">
-      <img src="envelope.png" alt="Envelope" id="envelope" />
+      <img src="envelope.png" alt="Envelope" id="envelope" draggable="false" />
       <p>♡ Letter for You ♡</p>
     </div>
 
     <!-- Letter Screen -->
     <div id="letter-container">
       <div class="letter-window">
-        <h1 id="letter-title">Will you be my Girlfriend?</h1>
+        <div class="letter-content">
+          <h1 id="letter-title">Will you be my Girlfriend?</h1>
 
-        <img src="cat_heart.gif" class="cat" id="letter-cat" />
+          <img
+            src="cat_heart.gif"
+            class="cat"
+            id="letter-cat"
+            alt="Cat holding a heart"
+            draggable="false"
+          />
 
-        <div class="buttons" id="letter-buttons">
-          <img src="yes.png" class="btn yes-btn" alt="Yes" />
+          <div class="buttons" id="letter-buttons">
+            <img
+              src="yes.png"
+              class="btn yes-btn"
+              alt="Yes"
+              draggable="false"
+            />
 
-          <div class="no-wrapper">
-            <img src="no.png" class="btn no-btn" alt="No" />
+            <div class="no-wrapper">
+              <img src="no.png" class="btn no-btn" alt="No" draggable="false" />
+            </div>
           </div>
-        </div>
 
-        <p id="final-text" class="final-text" style="display: none">
-          <strong>CAKEY</strong> LET'S GO ON A MOVIE DATE! <br />
-        </p>
+          <p id="final-text" class="final-text" style="display: none">
+            <strong>CAKEY</strong> HAPPY GIRLFRIEND DAY MY PRINCESS!!!! <br />
+          </p>
+        </div>
       </div>
     </div>
     <script src="script.js"></script>
